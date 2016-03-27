@@ -4,5 +4,5 @@
     selected = table.getElementsByClassName('menuitemSelected');
     
     if (selected[0]) selected[0].className = 'menuitem';
-    e.target.parentNode.className = 'menuitemSelected;
+    e.className = 'menuitemSelected';
   }

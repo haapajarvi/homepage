@@ -402,14 +402,14 @@ table.cd_frame {
 }
 
 .menuitem:hover {
-	background-color: #080808;
+	background-color: #808080;
 	cursor: pointer;
 	border: none;
 	border-width: 0px;
 }
 
 .menuitemSelected {
-	background-color: #FFFFFF;
+	background-color: #000000;
 	border: none;
 	border-width: 0px;
 }
