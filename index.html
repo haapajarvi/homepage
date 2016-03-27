@@ -8,8 +8,9 @@
 
 		<SCRIPT type=text/javascript src='js/Screen.js'></SCRIPT>
 		<SCRIPT type=text/javascript src='js/Menu.js'></SCRIPT>
+		<SCRIPT type=text/javascript src='js/Home.js'></SCRIPT>
 	</head>
-	<body onload='InitScreen()' onresize='InitScreen() '>
+	<body onload='InitScreen();ContactInformation();' onresize='InitScreen() '>
 		<DIV id='mainwindow' name='view' style = ''  >
 
 			<!--
@@ -47,13 +48,13 @@
 				</DIV>
 
 				<!-- b -->
-				<DIV id='divList' class='cd_frame' >
+				<DIV id='divList' >
 
-					<TABLE id='selSpace' name='spacesList' class='cd_frame' >
+					<TABLE id='selSpace'  >
 						<tbody>
 
 							<tr>
-								<td class="menuitem" onclick="SetMenuSelected(this); ContactInformation();">Yhteystiedot</td>
+								<td class="menuitemSelected" onclick="SetMenuSelected(this); ContactInformation();">Yhteystiedot</td>
 							</tr>
 							<tr>
 								<td class="menuitem" onclick="SetMenuSelected(this);" >CV</td>
@@ -81,10 +82,17 @@
 			</DIV><!-- b,c -->
 
 			<DIV class='e_frame'>
-				<DIV id='idPaper'  >
+				<DIV id='idPaper'>
 					<canvas id='myCanvas' >
 
 					</canvas>
+					
+					<DIV  id='textDiv' style="position: absolute;left: 0px;top:0px;">
+						<p>
+							A paragraph with no margins specified.
+						</p>
+					</DIV>
+					
 
 				</DIV>
 			</DIV>

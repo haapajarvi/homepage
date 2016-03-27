@@ -55,7 +55,11 @@ input[type="file"] {
 	line-height: 150%;
 	font-size: 20px;
 }
-
+object {
+	width:100%;
+	height:100%;
+	
+}
 #myCanvas {
 	color: #1B619B;
 	border-radius: 5px;
@@ -65,12 +69,13 @@ input[type="file"] {
 	margin: 1px;
 	/*background-color: #D8D8D8;*/
 	background-color: #EEEEEE;
+	width:1;
 }
 
 #idPaper {
 	border: none;
-	width: 100%;
-	height: 100%;
+	position:relative;
+	
 }
 
 #buttonWrapper {
@@ -99,57 +104,16 @@ input[type="file"] {
 }
 
 .e_frame {
+	float:left;
 	border: none;
-	width: 100%;
-	height: 100%;
+
+}
+#textDiv {
+	width:100%;
+	height:100%;
 }
 
-#idPoiDetailsView {
-    display: none;
-    margin: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: hidden;
-}
 
-/* Change password view */
-
-#changePasswordWrapper {
-background-color: #EEEEEE;
-width: 520px;
-height: 250px;
-position: absolute;
-left: 40%;
-top: 40%;
-margin-left: -150px;
-margin-top: -200px;
-border: 3px solid #1B619B;
-padding: 20px;
-}
-
-#changePwdTop {
-	text-align: center;
-}
- 
-#changePwdLeft {
-    float: left;
-    line-height: 30px;     
-}
-
-#changePwdRight {
-    float: right;
-}
-
-#changePwdBottom {
-	position: absolute;
-	bottom: 25px;
-	left: 25px;
-}
-
-.changePwdInput {
-	width: 300px;
-	font-size: 16px; 
-}
 
 /* Command buttons */
 input[type="button"]:not(.TapDataEditTabButton):not(.TapDataEditTabButtonSelected) {
@@ -219,87 +183,15 @@ img.a_frame {
 	float: left;
 	padding: 0;
 }
-img#minimize {
-	position: absolute;
-	top: 0px;
-	left: 315px;
-}
-img#maximize {
-	position: absolute;
-	top: 2px;
-	left: 1px;
-}
 
-#divTitle {
-	border: 2px solid;
-	/*background: #FFFFFF;*/
-	background: #EEEEEE;
-	color: #1B619B;
-	padding: 2px;
-	position: relative;
-	top: 0;
-	bottom: 0;
-	margin: 1px;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	/*font-size: 150%;*/
-	font-size: 120%;
-	text-align: center;
-}
 
-#settingsmenu {
-	display: none;
-	background-color: #F8F2E5;
-	color: #063C69;
-	font-weight: bold;
-	position: absolute;
-	top: 50px;
-	right: 13px;
-	height: auto;
-	border: solid;
-	border-radius: 10px;
-	-webkit-border-radius: 10px;
-	padding: 10px;
-	/*       height:32;*/
-}
+
 .menuitemDisabled {
 	text-shadow: #063369 0 1px 0;
 	color: #ECECEC;
 	opacity: 0.4;
 }
 
-#adminmenu {
-	/*
-	 border: solid;
-	 background: #F8F2E5;
-	 color: #063C69;
-	 font-weight: bold;
-
-	 position: absolute;
-	 top: 30px;
-	 left: 320px;
-
-	 height: auto;
-	 width: 10em;
-	 border-radius: 5px;
-	 -webkit-border-radius: 5px;
-	 padding: 5px;
-	 */
-}
-#adminmenuaddroom {
-	background: #F8F2E5;
-	color: #063C69;
-	font-weight: bold;
-	position: absolute;
-	bottom: 13px;
-	right: 13px;
-	height: auto;
-	width: 10em;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	padding: 5px;
-	background-image: url('../img/background-trans.png');
-}
 #list_maximized {
 	height: 100%;
 	border: none;
@@ -307,18 +199,8 @@ img#maximize {
 	padding: 0;
 	background-color: #DDDDDD;
 }
-#list_minimized {
-	height: 100%;
-	border: none;
-	background-color: #DDDDDD;
-}
 
-img#settingsmenu {
-	float: right;
-	padding: 0;
-	bottom: 0;
-	margin: auto;
-}
+
 
 .cd_frame {
 
@@ -358,27 +240,43 @@ table.cd_frame {
 	border-width: 0px;
 }
 
+#divTitle {
+	border: 2px solid;
+	/*background: #FFFFFF;*/
+	background: #EEEEEE;
+	color: #1B619B;
+	padding: 2px;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	margin: 1px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	/*font-size: 150%;*/
+	font-size: 120%;
+	text-align: center;
+}
+
 #divList {
 	background-color: #FFFFFF;
 	color: #1B619B;
 	overflow: auto;
-}
-
-#divUserName {
-	background-color: #FFFFFF;
-	color: #1B619B;
-	height: 30px;
-	clear: both;
-	border: solid;
-	padding: 5px;
-	border-width: 2px;
+	
+	
+		border: 2px solid;
+	/*background: #FFFFFF;*/
+	padding: 2px;
+	position: relative;
+	top: 0;
+	bottom: 0;
 	margin: 1px;
-	width: 300px;
-	float: left;
-	clear: both;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
+	/*font-size: 150%;*/
+	font-size: 120%;
+
 }
+
 
 #selSpace {
 	background-color: #FFFFFF;
@@ -387,7 +285,6 @@ table.cd_frame {
 	margin: 1px;
 	clear: both;
 	border: none;
-	width: 100%;
 	padding: 0;
 	font-size: 18px;
 }
@@ -397,6 +294,7 @@ table.cd_frame {
 }
 
 .menuitem {
+	width:200px;
 	border: none;
 	border-width: 0px;
 }

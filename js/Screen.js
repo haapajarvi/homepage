@@ -1,7 +1,10 @@
 function InitScreen() {
 	var canvas = null;
 	// p�ivitt�� kuvat
-
+	canvas = document.getElementById("myCanvas");
+	canvas.width = 1;
+	canvas.height = 1;
+	
 	//goFullscreen('ramewnd');
 
 	var window_w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -38,7 +41,7 @@ function InitScreen() {
 	var divList = document.getElementById("divList");
 	divList.style.height = iH - hDivTitle  - 12;
 
-	canvas = document.getElementById("myCanvas");
+
 	canvas.width = iW;
 	canvas.height = iH;
 
