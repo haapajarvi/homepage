@@ -4,10 +4,10 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Juha Haapajärvi</title>
-		       <link rel='stylesheet' type='text/css' href='css/home.css'>
- 
-        <SCRIPT type=text/javascript src='js/Screen.js'></SCRIPT>
- 
+		<link rel='stylesheet' type='text/css' href='css/home.css'>
+
+		<SCRIPT type=text/javascript src='js/Screen.js'></SCRIPT>
+		<SCRIPT type=text/javascript src='js/Menu.js'></SCRIPT>
 	</head>
 	<body onload='InitScreen()' onresize='InitScreen() '>
 		<DIV id='mainwindow' name='view' style = ''  >
@@ -51,29 +51,28 @@
 
 					<TABLE id='selSpace' name='spacesList' class='cd_frame' >
 						<tbody>
-							
-						
-						<tr>
-							<td class="property" name="spacesListobject">Yhteystiedot</td>
-						</tr>
-												<tr>
-							<td class="property" name="spacesListobject">CV</td>
-						</tr>
-												<tr>
-							<td class="property" name="spacesListobject">Työnäytteitä</td>
-						</tr>
-												<tr>
-							<td class="property" name="spacesListobject">Purjelento</td>
-						</tr>
-												<tr>
-							<td class="property" name="spacesListobject">Purjelentosää</td>
-						</tr>
-												<tr>
-							<td class="property" name="spacesListobject">Sukelluskuvia</td>
-						</tr>
-												<tr>
-							<td class="property" name="spacesListobject">Videoita</td>
-						</tr>
+
+							<tr>
+								<td class="menuitem" onclick="SetMenuSelected(this); ContactInformation();">Yhteystiedot</td>
+							</tr>
+							<tr>
+								<td class="menuitem" onclick="SetMenuSelected(this);" >CV</td>
+							</tr>
+							<tr>
+								<td class="menuitem" onclick="SetMenuSelected(this);">Työnäytteitä</td>
+							</tr>
+							<tr>
+								<td class="menuitem" onclick="SetMenuSelected(this);">Purjelento</td>
+							</tr>
+							<tr>
+								<td class="menuitem" onclick="SetMenuSelected(this);">Purjelentosää</td>
+							</tr>
+							<tr>
+								<td class="menuitem" onclick="SetMenuSelected(this);">Sukelluskuvia</td>
+							</tr>
+							<tr>
+								<td class="menuitem" onclick="SetMenuSelected(this);">Videoita</td>
+							</tr>
 						</tbody>
 					</TABLE>
 					<BR>
