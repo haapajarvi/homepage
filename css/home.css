@@ -312,3 +312,35 @@ table.cd_frame {
 	border-width: 0px;
 }
 
+.mStyle {
+
+	
+}
+
+div.mStyle_l {
+	float:left;
+	clear:right;
+	height:90%;
+
+	padding-left: 5pt;
+	padding-top: 5pt;
+}
+div.mStyle {
+
+	float:left;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	
+}
+span.mStyle {
+	width:100%;
+}	
+img.mStyle {
+
+	width: 240px; height: 360px;
+	
+	
+}
+p.mStyle {
+		padding-left: 50pt;
+}
