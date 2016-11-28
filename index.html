@@ -6,9 +6,10 @@
 		<title>Juha Haapajärvi</title>
 		<link rel='stylesheet' type='text/css' href='css/home.css'>
 
-		<SCRIPT type=text/javascript src='js/Screen.js'></SCRIPT>
-		<SCRIPT type=text/javascript src='js/Menu.js'></SCRIPT>
-		<SCRIPT type=text/javascript src='js/Home.js'></SCRIPT>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+		<SCRIPT type="text/javascript" src='js/Screen.js'></SCRIPT>
+		<SCRIPT type="text/javascript" src='js/Menu.js'></SCRIPT>
+		<SCRIPT type="text/javascript" src='js/Home.js'></SCRIPT>
 	</head>
 	<body onload='InitScreen();ContactInformation();' onresize='InitScreen() '>
 		<DIV id='mainwindow' name='view' style = ''  >
@@ -54,25 +55,25 @@
 						<tbody>
 
 							<tr>
-								<td class="menuitemSelected" onclick="SetMenuSelected(this); ContactInformation();">Yhteystiedot</td>
+								<td class="menuitemSelected" onclick="SetMenuSelected(this); ContactInformation();">Who?</td>
 							</tr>
 							<tr>
-								<td class="menuitem" onclick="SetMenuSelected(this);" >CV</td>
+								<td class="menuitem" onclick="SetMenuSelected(this);Cv();" >Resume?</td>
 							</tr>
 							<tr>
-								<td class="menuitem" onclick="SetMenuSelected(this);">Työnäytteitä</td>
+								<td class="menuitem" onclick="SetMenuSelected(this);window.open('portfolio/portfolio.htm','_parent');">Mitä?</td>
 							</tr>
 							<tr>
-								<td class="menuitem" onclick="SetMenuSelected(this);">Purjelento</td>
+								<td class="menuitem" onclick="SetMenuSelected(this);">Hobbies</td>
 							</tr>
 							<tr>
-								<td class="menuitem" onclick="SetMenuSelected(this);window.open('RASP/rasp.html','_parent'); ">Purjelentosää</td>
+								<td class="menuitem" onclick="SetMenuSelected(this);window.open('RASP/rasp.html','_parent'); ">Glider Weather</td>
 							</tr>
 							<tr>
-								<td class="menuitem" onclick="SetMenuSelected(this);">Sukelluskuvia</td>
+								<td class="menuitem" onclick="SetMenuSelected(this);">Scuba</td>
 							</tr>
 							<tr>
-								<td class="menuitem" onclick="SetMenuSelected(this);">Videoita</td>
+								<td class="menuitem" onclick="SetMenuSelected(this);window.open('Videoita/index.html','_parent'); ">Videos</td>
 							</tr>
 						</tbody>
 					</TABLE>
